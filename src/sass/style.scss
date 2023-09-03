@@ -1,5 +1,20 @@
-@import "base/example";
+// libs
+@import "libs/fonts";
+
+// base
+@import "base/variables";
+
+// ui
+@import "ui/header";
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 1216px;
 }
