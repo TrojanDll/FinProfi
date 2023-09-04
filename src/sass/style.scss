@@ -9,11 +9,13 @@
 @import "ui/filled-btn";
 @import "ui/void-btn";
 @import "ui/divider-line";
+@import "ui/report-table-item";
 
 // sections
 @import "sections/header";
 @import "sections/solutions";
 @import "sections/report-mini";
+@import "sections/report";
 
 * {
     box-sizing: border-box;
@@ -23,6 +25,10 @@
 
 body {
     background: url("../img/body__bg.png") center center/cover no-repeat;
+}
+
+input {
+    outline: none;
 }
 
 .container {

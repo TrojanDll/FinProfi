@@ -196,22 +196,95 @@
         <section class="report">
             <div class="container">
                 <div class="report__header">
-                    <div class="report__header__item">
-                        <div class="report__header__item__title"></div>
-                        <div class="report__header__item__line divider-line">
+                    <div class="report__header__wrapper">
+                        <div
+                            class="report__header__item report__header__item-name"
+                        >
+                            <div class="report__header__item__title">
+                                Наименование показателя
+                            </div>
                             <div
-                                class="report__header__item__line__triangle-right divider-line__triangle-right"
-                            ></div>
+                                class="report__header__item__line divider-line"
+                            >
+                                <!-- Заполняется из divider-line-fill.js -->
+                            </div>
+                        </div>
+
+                        <div
+                            class="report__header__item report__header__item-code"
+                        >
+                            <div class="report__header__item__title">
+                                Код строки
+                            </div>
                             <div
-                                class="report__header__item__line__stright divider-line__stright"
-                            ></div>
+                                class="report__header__item__line divider-line"
+                            >
+                                <!-- Заполняется из divider-line-fill.js -->
+                            </div>
+                        </div>
+
+                        <div
+                            class="report__header__item report__header__item-date"
+                        >
+                            <img
+                                src="img/plug-date.png"
+                                alt="plug-date"
+                                class="report__header__item__plug-date"
+                            />
+
                             <div
-                                class="report__header__item__line__triangle-left divider-line__triangle-left"
-                            ></div>
+                                class="report__header__item__line divider-line report__header__item__line-last"
+                            >
+                                <!-- Заполняется из divider-line-fill.js -->
+                            </div>
                         </div>
                     </div>
+
+                    <img
+                        src="img/plug-upload.png"
+                        alt="plug-upload"
+                        class="report__header__plug-upload"
+                    />
+                </div>
+
+                <div class="report__table">
+                    <div class="report__table__title">Активы</div>
+                    <div class="report__table__subtitle">
+                        I. долговые активы
+                    </div>
+
+                    <div class="report__table__items-wrapper_first">
+                        <!-- Заполняется из report-table-items-fill.js -->
+                    </div>
+
+                    <div
+                        class="report__table__title report__table__title_second"
+                    >
+                        Дополнительные данные
+                    </div>
+
+                    <div class="report__table__items-wrapper_second">
+                        <!-- Заполняется из report-table-items-fill.js -->
+                    </div>
+                </div>
+
+                <div class="report__btns">
+                    <button class="report__btns__btn void-btn">
+                        Краткий отчет
+                    </button>
+                    <button class="report__btns__btn filled-btn">
+                        Сформировать отчет
+                    </button>
                 </div>
             </div>
         </section>
+
+        <footer class="footer">
+            <div class="footer__line"></div>
+            <div class="container"></div>
+        </footer>
+
+        <script src="js/divider-line-fill.js"></script>
+        <script src="js/report-table-items-fill.js"></script>
     </body>
 </html>
