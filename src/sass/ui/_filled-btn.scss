@@ -1,4 +1,7 @@
 .filled-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 245px;
     height: 60px;
     background-color: $cyan-ease;
@@ -7,6 +10,7 @@
     text-align: center;
     font-family: Nunito;
     font-size: 20px;
+    line-height: 20px;
     font-weight: 400;
     color: $white-100;
     cursor: pointer;
