@@ -1,0 +1,172 @@
+.report-mini {
+    min-height: 314px;
+    margin-top: 30px;
+
+    &__title {
+        color: $deep-blue;
+        font-family: Source Sans Pro;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    &__input {
+        position: relative;
+        padding: 0px 16px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        border: 1px solid $cyan-ease;
+        background-color: white;
+        width: 100%;
+        color: $cyan-ease;
+        font-family: Source Sans Pro;
+        font-size: 20px;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: 600;
+        outline: none;
+
+        &::-webkit-input-placeholder {
+            position: absolute;
+            top: 50%;
+            left: 16px;
+            transform: translateY(-50%);
+            color: $dark-gray-ease;
+            font-family: Nunito;
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: 400;
+        }
+    }
+
+    &__form {
+        &__wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            margin-top: 21px;
+            height: 65px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &__title {
+                color: $deep-blue;
+                font-family: Nunito;
+                font-size: 16px;
+                font-weight: 400;
+                text-align: left;
+            }
+        }
+
+        &__name-of-the-organization {
+            width: 316px;
+        }
+
+        &__units {
+            width: 225px;
+
+            &__wrapper {
+                position: relative;
+            }
+
+            &__input {
+                cursor: pointer;
+                position: relative;
+            }
+            &__arrow {
+                position: absolute;
+                z-index: 1;
+                width: 13px;
+                height: 13px;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 10px;
+            }
+        }
+
+        &__economic-activity {
+            width: 388px;
+
+            &__wrapper {
+                position: relative;
+            }
+
+            &__input {
+                cursor: pointer;
+                position: relative;
+            }
+            &__arrow {
+                position: absolute;
+                z-index: 1;
+                width: 13px;
+                height: 13px;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 10px;
+            }
+        }
+
+        &__group {
+            width: 213px;
+
+            &__wrapper {
+                position: relative;
+            }
+
+            &__input {
+                cursor: pointer;
+                position: relative;
+            }
+            &__arrow {
+                position: absolute;
+                z-index: 1;
+                width: 13px;
+                height: 13px;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 10px;
+            }
+        }
+
+        &__reporting {
+            width: 475px;
+        }
+
+        &__unp {
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+            flex-wrap: nowrap;
+            width: 717px;
+
+            &__input {
+                width: 77%;
+                border-right: none;
+            }
+
+            &__btn {
+                width: 23%;
+                height: 40px;
+                transform: translateX(-5px);
+            }
+        }
+
+        &__btns {
+            margin-top: 56px;
+            display: flex;
+            justify-content: end;
+
+            &__btn {
+                &:first-child {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

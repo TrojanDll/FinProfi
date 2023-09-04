@@ -1,0 +1,21 @@
+.void-btn {
+    width: 245px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: inherit;
+    border: none;
+    border: 3px solid $cyan-ease;
+    border-radius: 4px;
+    color: $cyan-ease;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:hover {
+        border-color: $blue-ease;
+    }
+}
