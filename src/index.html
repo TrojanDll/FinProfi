@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/air-datepicker.css" />
         <link rel="stylesheet" href="css/style.css" />
+
         <title>FinProfi</title>
     </head>
     <body>
@@ -239,21 +241,59 @@
                         <div
                             class="report__header__item report__header__item-date"
                         >
-                            <form
-                                action=""
-                                class="date-form report__header__item-date__date-form"
+                            <div
+                                class="report__header__item-date__date-forms-wrapper"
                             >
-                                <input
-                                    type="date"
-                                    name="date"
-                                    class="date-form__input"
-                                />
-                                <input
-                                    type="reset"
-                                    class="date-form__reset"
-                                    value=""
-                                />
-                            </form>
+                                <form
+                                    action=""
+                                    class="date-form report__header__item-date__date-form"
+                                >
+                                    <input
+                                        type="text"
+                                        name="date"
+                                        id="date-form-report1"
+                                        class="date-form__input"
+                                        autocomplete="off"
+                                        value="31.12.2022"
+                                        readonly
+                                    />
+                                    <img
+                                        src="icons/calendar.svg"
+                                        alt="calendar"
+                                        class="date-form__input-img"
+                                    />
+                                    <input
+                                        type="reset"
+                                        class="date-form__reset"
+                                        value=""
+                                    />
+                                </form>
+
+                                <form
+                                    action=""
+                                    class="date-form report__header__item-date__date-form"
+                                >
+                                    <input
+                                        type="text"
+                                        name="date"
+                                        id="date-form-report2"
+                                        class="date-form__input"
+                                        autocomplete="off"
+                                        value="31.12.2022"
+                                        readonly
+                                    />
+                                    <img
+                                        src="icons/calendar.svg"
+                                        alt="calendar"
+                                        class="date-form__input-img"
+                                    />
+                                    <input
+                                        type="reset"
+                                        class="date-form__reset"
+                                        value=""
+                                    />
+                                </form>
+                            </div>
 
                             <div
                                 class="report__header__item__line divider-line report__header__item__line-last"
@@ -263,11 +303,12 @@
                         </div>
                     </div>
 
-                    <img
-                        src="img/plug-upload.png"
-                        alt="plug-upload"
-                        class="report__header__plug-upload"
-                    />
+                    <div class="report__header__btns">
+                        <div class="report__header__btn header-btn">+</div>
+                        <div class="report__header__btn header-btn">
+                            Загрузить отчет
+                        </div>
+                    </div>
                 </div>
 
                 <div class="report__table">
@@ -305,77 +346,61 @@
         <footer class="footer">
             <div class="footer__line"></div>
             <div class="container">
-                <div class="footer__main-info">
-                    <img
-                        src="img/logo.png"
-                        alt="logo"
-                        class="footer__main-info__logo"
-                    />
-
-                    <div class="footer__main-info__text">
-                        Руководство пользователя
-                    </div>
-                    <div class="footer__main-info__text">
-                        Политика обработки персональных данных
-                    </div>
-                    <div class="footer__main-info__text">
-                        Воспроизведение материалов сайта без письменного
-                        согласия владельца запрещено
-                    </div>
-                </div>
-
-                <div class="footer__analysis">
-                    <div class="footer__analysis__title">
-                        Финансовый анализ организации
-                    </div>
-                    <div class="footer__analysis__btn filled-btn">
-                        подписаться
-                    </div>
-                </div>
-
-                <div class="footer__contacts">
-                    <div class="footer__contacts__item">
+                <div class="footer__blocks-wrapper">
+                    <div class="footer__main-info footer__block">
                         <img
-                            src="icons/phone.svg"
-                            alt="phone"
-                            class="footer__contacts__item__img"
+                            src="img/logo.png"
+                            alt="logo"
+                            class="footer__main-info__logo"
                         />
 
-                        <div class="footer__contacts__item__text">
-                            +375 763 59 860
+                        <div class="footer__main-info__text">
+                            Руководство пользователя
+                        </div>
+                        <div class="footer__main-info__text">
+                            Политика обработки персональных данных
                         </div>
                     </div>
 
-                    <div class="footer__contacts__item">
-                        <img
-                            src="icons/mail.svg"
-                            alt="phone"
-                            class="footer__contacts__item__img"
-                        />
-
-                        <div class="footer__contacts__item__text">
-                            finvista@gmail.com
+                    <div class="footer__analysis footer__block">
+                        <div class="footer__analysis__title">
+                            Финансовый анализ организации
+                        </div>
+                        <div class="footer__analysis__btn filled-btn">
+                            подписаться
                         </div>
                     </div>
 
-                    <div class="footer__contacts__social">
-                        <img
-                            src="icons/facebook.svg"
-                            alt="facebook"
-                            class="footer__contacts__social__item"
-                        /><img
-                            src="icons/twitter.svg"
-                            alt="twitter"
-                            class="footer__contacts__social__item"
-                        /><img
-                            src="icons/vk.svg"
-                            alt="vk"
-                            class="footer__contacts__social__item"
-                        /><img
-                            src="icons/telegram.svg"
-                            alt="telegram"
-                            class="footer__contacts__social__item"
-                        />
+                    <div class="footer__contacts footer__block">
+                        <div class="footer__contacts__wrapper">
+                            <div class="footer__contacts__item">
+                                <img
+                                    src="icons/phone.svg"
+                                    alt="phone"
+                                    class="footer__contacts__item__img"
+                                />
+
+                                <div class="footer__contacts__item__text">
+                                    +375 763 59 860
+                                </div>
+                            </div>
+
+                            <div class="footer__contacts__item">
+                                <img
+                                    src="icons/mail.svg"
+                                    alt="phone"
+                                    class="footer__contacts__item__img"
+                                />
+
+                                <div class="footer__contacts__item__text">
+                                    finvista@gmail.com
+                                </div>
+                            </div>
+
+                            <div class="footer__contacts__social">
+                                <!-- Заполняется из footer-contacts-social-fill.js -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -383,5 +408,8 @@
 
         <script src="js/divider-line-fill.js"></script>
         <script src="js/report-table-items-fill.js"></script>
+        <script src="js/air-datepicker.js"></script>
+        <script src="js/air-datepicker-bind.js"></script>
+        <script src="js/footer-contacts-social-fill.js"></script>
     </body>
 </html>
