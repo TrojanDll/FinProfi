@@ -1,0 +1,18 @@
+.date-form {
+    width: 154px;
+    height: 32px;
+    display: flex;
+    padding: 3px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    border: 1px solid $dark-gray-ease;
+
+    &__input {
+        color: $deep-blue;
+        font-family: Inter;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

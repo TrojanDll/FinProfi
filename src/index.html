@@ -29,8 +29,8 @@
         </header>
 
         <section class="solutions">
-            <div class="solutions__band"></div>
             <div class="container">
+                <div class="solutions__band"></div>
                 <h2 class="solutions__title">
                     Принимайте финансовые решения с уверенностью.
                 </h2>
@@ -83,12 +83,14 @@
                                 Единица измерения
                             </div>
                             <div class="report-mini__form__units__wrapper">
-                                <input
-                                    type="text"
+                                <select
                                     class="report-mini__form__units__input report-mini__input"
-                                    placeholder="тыс. руб."
-                                    readonly
-                                />
+                                    name="units-select"
+                                >
+                                    <option value="рубль">рубль</option>
+                                    <option value="тыс. руб.">тыс. руб.</option>
+                                    <option value="рубль">млн. руб</option>
+                                </select>
 
                                 <img
                                     src="icons/arrow-down.svg"
@@ -109,12 +111,15 @@
                             <div
                                 class="report-mini__form__economic-activity__wrapper"
                             >
-                                <input
-                                    type="text"
+                                <select
                                     class="report-mini__form__economic-activity__input report-mini__input"
-                                    placeholder="сельское, лесное и рыбное хоз."
-                                    readonly
-                                />
+                                    name="economic-activity-select"
+                                    size="1"
+                                >
+                                    <option value="сельское">сельское</option>
+                                    <option value="лесное">лесное</option>
+                                    <option value="рыбное">рыбное</option>
+                                </select>
 
                                 <img
                                     src="icons/arrow-down.svg"
@@ -134,12 +139,15 @@
                             </div>
 
                             <div class="report-mini__form__group__wrapper">
-                                <input
-                                    type="text"
+                                <select
                                     class="report-mini__form__group__input report-mini__input"
-                                    placeholder="031-032"
-                                    readonly
-                                />
+                                    name="group-select"
+                                    size="1"
+                                >
+                                    <option value="031-032">031-032</option>
+                                    <option value="031-034">031-034</option>
+                                    <option value="031-038">031-038</option>
+                                </select>
 
                                 <img
                                     src="icons/arrow-down.svg"
@@ -182,12 +190,17 @@
                     </div>
 
                     <div class="report-mini__form__btns">
-                        <button class="report-mini__form__btns__btn void-btn">
-                            Сброс данных
-                        </button>
-                        <button class="report-mini__form__btns__btn filled-btn">
-                            Сформировать отчет
-                        </button>
+                        <input
+                            type="reset"
+                            class="report-mini__form__btns__btn void-btn"
+                            value="Сброс данных"
+                        />
+
+                        <input
+                            type="submit"
+                            class="report-mini__form__btns__btn filled-btn"
+                            value="Сформировать отчет"
+                        />
                     </div>
                 </form>
             </div>
@@ -226,11 +239,17 @@
                         <div
                             class="report__header__item report__header__item-date"
                         >
-                            <img
-                                src="img/plug-date.png"
-                                alt="plug-date"
-                                class="report__header__item__plug-date"
-                            />
+                            <form
+                                action=""
+                                class="date-form report__header__item-date__date-form"
+                            >
+                                <input
+                                    type="date"
+                                    name="date"
+                                    class="date-form__input"
+                                />
+                                <input type="reset" />
+                            </form>
 
                             <div
                                 class="report__header__item__line divider-line report__header__item__line-last"
