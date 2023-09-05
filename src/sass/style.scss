@@ -38,3 +38,27 @@ input {
     margin: 0 auto;
     width: 1216px;
 }
+
+@media (max-width: 1230px) {
+    .container {
+        width: 900px;
+    }
+}
+
+@media (max-width: 930px) {
+    .container {
+        width: 650px;
+    }
+}
+
+@media (max-width: 680px) {
+    .container {
+        width: 440px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 320px;
+    }
+}
