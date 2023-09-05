@@ -9,10 +9,31 @@
     border: 1px solid $dark-gray-ease;
 
     &__input {
+        display: flex;
+        align-items: center;
         color: $deep-blue;
         font-family: Inter;
         font-size: 15px;
         font-weight: 400;
         line-height: normal;
+        border: none;
+        width: 112px;
+
+        &::-webkit-calendar-picker-indicator {
+            color: transparent;
+            opacity: 1;
+            background: url("../icons/calendar.svg") no-repeat center;
+            background-size: contain;
+            width: 22px;
+            height: 22px;
+        }
+    }
+
+    &__reset {
+        background: inherit;
+        border: none;
+        background: url("../icons/delete-date.svg") no-repeat center;
+        width: 24px;
+        height: 24px;
     }
 }
