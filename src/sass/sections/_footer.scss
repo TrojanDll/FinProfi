@@ -19,6 +19,10 @@
         align-items: center;
     }
 
+    &__blocks-wrapper-mobile {
+        display: none;
+    }
+
     &__block {
         width: 33%;
     }
@@ -35,6 +39,10 @@
             font-family: Nunito;
             font-size: 16px;
             font-weight: 400;
+        }
+
+        &__text-wrapper-mobile {
+            display: none;
         }
     }
 
@@ -101,72 +109,121 @@
         }
     }
 
-    // &__main-info {
-    //     position: absolute;
-    //     top: 46px;
+    &__warning {
+        color: $white-ease;
+        font-family: Nunito;
+        font-size: 16px;
+        font-weight: 400;
+        position: absolute;
+        bottom: -32px;
+    }
+}
 
-    //     &__logo {
-    //         width: 200px;
-    //         height: 116px;
-    //     }
+@media (max-width: 930px) {
+    .footer {
+        min-height: 625px;
+        &__blocks-wrapper {
+            display: none;
+        }
 
-    //     &__text {
-    //         margin-top: 15px;
-    //         color: $white-ease;
-    //         font-family: Nunito;
-    //         font-size: 16px;
-    //         font-weight: 400;
-    //     }
-    // }
+        &__blocks-wrapper-mobile {
+            display: block;
+        }
 
-    // &__analysis {
-    //     position: absolute;
-    //     top: 92px;
-    //     left: 50%;
-    //     transform: translateX(-50%);
+        &__main-info__logo {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
 
-    //     &__title {
-    //         color: $white-ease;
-    //         text-align: center;
-    //         font-family: Source Sans Pro;
-    //         font-size: 24px;
-    //         font-weight: 600;
-    //         line-height: 24px;
-    //     }
+        &__analysis__title {
+            margin-top: 10px;
+        }
 
-    //     &__btn {
-    //         height: 44px;
-    //         margin: 0 auto;
-    //         margin-top: 20px;
-    //     }
-    // }
+        &__analysis__btn {
+            width: 340px;
+        }
 
-    // &__contacts {
-    //     width: 250px;
-    //     position: absolute;
-    //     right: 0;
-    //     top: 73px;
+        &__block {
+            margin: 0 auto;
+        }
 
-    //     &__item {
-    //         margin-top: 15px;
-    //         display: flex;
-    //         align-items: end;
+        &__contacts {
+            width: 440px;
 
-    //         &__text {
-    //             color: $white-ease;
-    //             text-align: center;
-    //             font-family: Nunito;
-    //             font-size: 20px;
-    //             font-weight: 400;
-    //             line-height: 20px;
-    //         }
-    //     }
+            &__wrapper {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
 
-    //     &__social {
-    //         margin-top: 15px;
-    //         width: 100%;
-    //         display: flex;
-    //         justify-content: space-between;
-    //     }
-    // }
+            &__item {
+                width: calc(50% - 7px);
+                display: flex;
+                align-items: center;
+
+                &__text {
+                    font-size: 16px;
+                    line-height: 16px;
+                }
+            }
+
+            &__social {
+                width: 320px;
+            }
+        }
+
+        &__main-info {
+            &__text {
+                margin-top: 15px;
+            }
+            &__text-wrapper-mobile {
+                display: block;
+            }
+        }
+
+        &__warning {
+            bottom: -52px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        min-height: 730px;
+        &__blocks-wrapper-mobile {
+            width: 100%;
+        }
+
+        &__main-info {
+            &__text-wrapper {
+                margin-top: 40px;
+            }
+        }
+
+        &__contacts {
+            width: 100%;
+
+            &__item {
+                width: 185px;
+                display: flex;
+                align-items: center;
+
+                &__text {
+                    font-size: 16px;
+                    line-height: 16px;
+                    margin-left: 0;
+
+                    &:last-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+
+        &__warning {
+            bottom: -78px;
+        }
+    }
 }
