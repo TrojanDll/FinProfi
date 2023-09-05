@@ -151,12 +151,18 @@
             &__input {
                 width: 77%;
                 border-right: none;
+                padding-top: 10px;
+                resize: none;
             }
 
             &__btn {
                 width: 23%;
                 height: 40px;
                 transform: translateX(-5px);
+            }
+
+            &__btn-mobile {
+                display: none;
             }
         }
 
@@ -168,6 +174,121 @@
             &__btn {
                 &:first-child {
                     margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1230px) {
+    .report-mini {
+        &__form {
+            &__name-of-the-organization {
+                width: calc(33% - 5px);
+            }
+
+            &__units {
+                width: calc(33% - 5px);
+            }
+
+            &__economic-activity {
+                width: calc(33% - 5px);
+            }
+
+            &__group {
+                width: calc(50% - 10px);
+            }
+
+            &__reporting {
+                width: calc(50% - 10px);
+            }
+
+            &__unp {
+                margin: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 930px) {
+    .report-mini {
+        &__form {
+            &__name-of-the-organization {
+                width: 100%;
+            }
+
+            &__units {
+                width: 100%;
+            }
+
+            &__economic-activity {
+                width: 100%;
+            }
+
+            &__group {
+                width: 100%;
+            }
+
+            &__reporting {
+                width: 100%;
+            }
+
+            &__unp {
+                margin-top: 21px;
+                width: 100%;
+            }
+
+            &__btns {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .report-mini {
+        &__form {
+            &__unp {
+                position: relative;
+                &__btn {
+                    display: none;
+                }
+
+                &__btn-mobile {
+                    display: block;
+                    position: absolute;
+                    right: 10px;
+                    top: 28px;
+                    width: 20px;
+                    height: 20px;
+                    border: none;
+                    padding: 0;
+                    background-color: inherit;
+                    background: url("../icons/lens.svg") center center/cover
+                        no-repeat;
+                }
+
+                &__input {
+                    width: 100%;
+                    border: 1px solid $cyan-ease;
+                    height: 56px;
+                    padding-right: 55px;
+                }
+            }
+
+            &__btns {
+                flex-wrap: wrap;
+
+                &__btn {
+                    width: 100%;
+                    &:first-child {
+                        margin: 0;
+                    }
+
+                    &:last-child {
+                        margin-top: 40px;
+                    }
                 }
             }
         }

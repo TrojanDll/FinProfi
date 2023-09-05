@@ -79,6 +79,7 @@
 
 @media (max-width: 1230px) {
     .solutions {
+        min-height: 470px;
         &__title {
             font-size: 32px;
         }
@@ -111,6 +112,7 @@
 
 @media (max-width: 930px) {
     .solutions {
+        min-height: 440px;
         margin-top: 60px;
         &__title {
             font-size: 28px;
