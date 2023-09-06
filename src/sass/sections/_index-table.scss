@@ -1,9 +1,12 @@
 .index-table {
     margin-top: 40px;
-    margin-left: 352px;
-    width: 1216px;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 
     &__wrapper {
+        overflow: scroll;
         z-index: -1;
         width: 1216px;
         border-spacing: 0;
