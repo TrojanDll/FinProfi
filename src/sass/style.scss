@@ -11,6 +11,7 @@
 @import "ui/divider-line";
 @import "ui/report-table-item";
 @import "ui/date-form";
+@import "ui/conclusions-item";
 
 // sections from index.html
 @import "sections/header";
@@ -21,6 +22,7 @@
 
 // sections from grade.html
 @import "sections/grade";
+@import "sections/conclusions";
 
 * {
     box-sizing: border-box;

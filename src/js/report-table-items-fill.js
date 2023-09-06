@@ -185,6 +185,7 @@ insertMainData().then((resMessage) => {
             console.log("1230");
             return 0;
         }
+
         if (window.innerWidth >= 930) {
             wrappersToScroll.forEach((item) => {
                 item.style.width = `${
@@ -194,6 +195,7 @@ insertMainData().then((resMessage) => {
             console.log("930");
             return 0;
         }
+
         if (window.innerWidth >= 680) {
             wrappersToScroll.forEach((item) => {
                 item.style.width = `${
@@ -203,6 +205,7 @@ insertMainData().then((resMessage) => {
             console.log("680");
             return 0;
         }
+
         if (window.innerWidth >= 480) {
             wrappersToScroll.forEach((item) => {
                 item.style.width = `${
@@ -212,6 +215,7 @@ insertMainData().then((resMessage) => {
             console.log("480");
             return 0;
         }
+
         if (window.innerWidth >= 1) {
             wrappersToScroll.forEach((item) => {
                 item.style.width = `${
