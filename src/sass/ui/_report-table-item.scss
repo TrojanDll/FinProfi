@@ -23,12 +23,27 @@
         font-family: Nunito;
         font-size: 16px;
         font-weight: 400;
+        min-width: 34px;
+        text-align: left;
     }
 
     &__inputs-wrapper {
         width: 408px;
         display: flex;
         justify-content: space-between;
+        overflow: scroll;
+        position: relative;
+        min-height: 38px;
+
+        &__to-scroll {
+            position: absolute;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     &__input {

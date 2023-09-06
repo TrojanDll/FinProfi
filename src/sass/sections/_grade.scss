@@ -1,0 +1,15 @@
+.grade {
+    margin-top: 40px;
+    min-height: 273px;
+
+    &__title {
+        width: 820px;
+        color: $cyan-ease;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Raleway;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; /* 46.8px */
+    }
+}

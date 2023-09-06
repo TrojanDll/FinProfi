@@ -12,12 +12,15 @@
 @import "ui/report-table-item";
 @import "ui/date-form";
 
-// sections
+// sections from index.html
 @import "sections/header";
 @import "sections/solutions";
 @import "sections/report-mini";
 @import "sections/report";
 @import "sections/footer";
+
+// sections from grade.html
+@import "sections/grade";
 
 * {
     box-sizing: border-box;

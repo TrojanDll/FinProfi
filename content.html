@@ -1,175 +1,26 @@
-<section class="report">
-    <div class="container">
-        <div class="report__header">
-            <div class="report__header__wrapper">
-                <div class="report__header__item report__header__item-name">
-                    <div class="report__header__item__title">
-                        Наименование показателя
-                    </div>
-                    <div class="report__header__item__line divider-line">
-                        <!-- Заполняется из divider-line-fill.js -->
-                    </div>
-                </div>
-
-                <div class="report__header__item report__header__item-code">
-                    <div class="report__header__item__title">Код строки</div>
-                    <div class="report__header__item__line divider-line">
-                        <!-- Заполняется из divider-line-fill.js -->
-                    </div>
-                </div>
-
-                <div class="report__header__item report__header__item-date">
-                    <div class="report__header__item-date__date-forms-wrapper">
-                        <form
-                            action=""
-                            class="date-form report__header__item-date__date-form"
-                        >
-                            <input
-                                type="text"
-                                name="date"
-                                id="date-form-report1"
-                                class="date-form__input"
-                                autocomplete="off"
-                                value="31.12.2022"
-                                readonly
-                            />
-                            <img
-                                src="icons/calendar.svg"
-                                alt="calendar"
-                                class="date-form__input-img"
-                            />
-                            <input
-                                type="reset"
-                                class="date-form__reset"
-                                value=""
-                            />
-                        </form>
-
-                        <form
-                            action=""
-                            class="date-form report__header__item-date__date-form"
-                        >
-                            <input
-                                type="text"
-                                name="date"
-                                id="date-form-report2"
-                                class="date-form__input"
-                                autocomplete="off"
-                                value="31.12.2022"
-                                readonly
-                            />
-                            <img
-                                src="icons/calendar.svg"
-                                alt="calendar"
-                                class="date-form__input-img"
-                            />
-                            <input
-                                type="reset"
-                                class="date-form__reset"
-                                value=""
-                            />
-                        </form>
-                    </div>
-
-                    <div
-                        class="report__header__item__line divider-line report__header__item__line-last"
-                    >
-                        <!-- Заполняется из divider-line-fill.js -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="report__header__btns">
-                <div class="report__header__btn header-btn">+</div>
-                <div class="report__header__btn header-btn">
-                    Загрузить отчет
-                </div>
-            </div>
+<div class="report__table__item report-table-item">
+    <div
+        class="report__table__item__text-wrapper report-table-item__text-wrapper"
+    >
+        <div class="report__table__item__header report-table-item__header">
+            Долгосрочные финансовые вложения на начало года
         </div>
+        <div class="report__table__item__code report-table-item__code">25</div>
+    </div>
 
-        <div class="report__table">
-            <div class="report__table__title">Активы</div>
-            <div class="report__table__subtitle">I. долговые активы</div>
-
-            <div class="report__table__items-wrapper_first">
-                <!-- Заполняется из report-table-items-fill.js -->
-            </div>
-
-            <div class="report__table__title report__table__title_second">
-                Дополнительные данные
-            </div>
-
-            <div class="report__table__items-wrapper_second">
-                <!-- Заполняется из report-table-items-fill.js -->
-            </div>
-        </div>
-
-        <div class="report__btns">
-            <button class="report__btns__btn void-btn">Краткий отчет</button>
-            <button class="report__btns__btn filled-btn">
-                Сформировать отчет
-            </button>
+    <div
+        class="report__table__item__inputs-wrapper report-table-item__inputs-wrapper"
+    >
+        <div class="report-table-item__inputs-wrapper__to-scroll">
+            <input
+                type="text"
+                class="report__table__item__input report-table-item__input"
+                placeholder="0"
+            /><input
+                type="text"
+                class="report__table__item__input report-table-item__input"
+                placeholder="0"
+            />
         </div>
     </div>
-</section>
-
-<footer class="footer">
-    <div class="footer__line"></div>
-    <div class="container">
-        <div class="footer__blocks-wrapper">
-            <div class="footer__main-info footer__block">
-                <img
-                    src="img/logo.png"
-                    alt="logo"
-                    class="footer__main-info__logo"
-                />
-
-                <div class="footer__main-info__text">
-                    Руководство пользователя
-                </div>
-                <div class="footer__main-info__text">
-                    Политика обработки персональных данных
-                </div>
-            </div>
-
-            <div class="footer__analysis footer__block">
-                <div class="footer__analysis__title">
-                    Финансовый анализ организации
-                </div>
-                <div class="footer__analysis__btn filled-btn">подписаться</div>
-            </div>
-
-            <div class="footer__contacts footer__block">
-                <div class="footer__contacts__wrapper">
-                    <div class="footer__contacts__item">
-                        <img
-                            src="icons/phone.svg"
-                            alt="phone"
-                            class="footer__contacts__item__img"
-                        />
-
-                        <div class="footer__contacts__item__text">
-                            +375 763 59 860
-                        </div>
-                    </div>
-
-                    <div class="footer__contacts__item">
-                        <img
-                            src="icons/mail.svg"
-                            alt="phone"
-                            class="footer__contacts__item__img"
-                        />
-
-                        <div class="footer__contacts__item__text">
-                            finvista@gmail.com
-                        </div>
-                    </div>
-
-                    <div class="footer__contacts__social">
-                        <!-- Заполняется из footer-contacts-social-fill.js -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+</div>
