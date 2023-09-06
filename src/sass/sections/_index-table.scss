@@ -1,0 +1,95 @@
+.index-table {
+    margin-top: 40px;
+    margin-left: 352px;
+    width: 1216px;
+
+    &__wrapper {
+        z-index: -1;
+        width: 1216px;
+        border-spacing: 0;
+        position: relative;
+    }
+
+    &__item-header {
+        position: relative;
+        z-index: -1;
+        width: 183px;
+        height: 126px;
+        padding-top: 20px;
+        text-align: center;
+        background-color: $cyan-ease;
+        color: $white-100;
+        font-family: Nunito;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 110%; /* 17.6px */
+        text-indent: 0;
+        vertical-align: top;
+
+        &:last-child {
+            width: 300px;
+        }
+
+        &__divider {
+            position: absolute;
+            z-index: 3;
+            bottom: 30px;
+            height: 5px;
+            width: calc(100% - 12px);
+            background-color: $white-100;
+
+            &_last {
+                width: 100%;
+                right: 0;
+            }
+        }
+    }
+
+    &__item-block {
+        position: relative;
+        padding: 20px 5px;
+        width: 183px;
+        text-align: left;
+        color: $deep-blue;
+        font-family: Nunito;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 110%; /* 17.6px */
+        vertical-align: top;
+        padding-bottom: 40px;
+
+        &_gray {
+            background-color: $gray-ease;
+        }
+
+        &_light {
+            background-color: $white-100;
+        }
+
+        &__divider {
+            position: absolute;
+            z-index: 3;
+            top: -5px;
+            height: 5px;
+            width: calc(100% - 12px);
+
+            &_last {
+                width: calc(100% - 6px);
+                right: 0;
+            }
+
+            &_first {
+                width: calc(100% - 6px);
+                left: 0;
+            }
+
+            &_light {
+                background-color: $white-100;
+            }
+
+            &_gray {
+                background-color: $gray-ease;
+            }
+        }
+    }
+}
