@@ -30,3 +30,25 @@
         line-height: normal;
     }
 }
+
+@media (max-width: 930px) {
+    .grade {
+        &__title {
+            width: 100%;
+            font-size: 32px;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .grade {
+        &__title {
+            font-size: 28px;
+        }
+
+        &__divider {
+            height: 100px;
+            background-size: 1800px;
+        }
+    }
+}

@@ -58,6 +58,10 @@
             }
         }
     }
+
+    &__list-wrapper {
+        margin-top: 40px;
+    }
 }
 
 .conclusions-item {
@@ -65,5 +69,27 @@
 
     &:first-child {
         margin-top: 20px;
+    }
+}
+
+@media (max-width: 680px) {
+    .conclusions {
+        &__result {
+            &__title {
+                font-size: 28px;
+            }
+
+            &__descr {
+                &__list {
+                    &__item {
+                        &::before {
+                            top: 10px;
+                            left: -20px;
+                            transform: translateY(0);
+                        }
+                    }
+                }
+            }
+        }
     }
 }

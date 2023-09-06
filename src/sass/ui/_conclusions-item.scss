@@ -83,3 +83,21 @@
 .warning-grade {
     background: url("../icons/attention.svg") center center/cover repeat;
 }
+
+@media (max-width: 680px) {
+    .conclusions-item {
+        &__descr {
+            margin-top: 30px;
+        }
+
+        &__list {
+            &__item {
+                &::before {
+                    top: 10px;
+                    left: -20px;
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+}
