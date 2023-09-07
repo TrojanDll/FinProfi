@@ -116,7 +116,7 @@ const wrapperSecond = document.querySelectorAll(
 );
 
 //задать число инпутов в каждом элементе, используеться для задания ширины
-const numberOfInputs = 4;
+const numberOfInputs = 5;
 
 function insertMainData() {
     return new Promise((resolve, reject) => {
@@ -155,6 +155,11 @@ function insertMainData() {
                     class="report__table__item__input report-table-item__input"
                     placeholder="0"
                 />
+                <input
+                            type="text"
+                            class="report__table__item__input report-table-item__input"
+                            placeholder="0"
+                        />
                         </div>
                     </div>
                 </div>
@@ -265,6 +270,11 @@ wrapperSecond.forEach((item) => {
                     class="report__table__item__input report-table-item__input"
                     placeholder="0"
                 />
+                <input
+                            type="text"
+                            class="report__table__item__input report-table-item__input"
+                            placeholder="0"
+                        />
                 </div>
             </div>
         </div>
