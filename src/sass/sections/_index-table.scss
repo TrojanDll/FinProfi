@@ -1,13 +1,13 @@
 .index-table {
     min-height: 1018px;
     margin-top: 40px;
-    overflow: scroll;
+    overflow: hidden;
     &::-webkit-scrollbar {
         display: none;
     }
 
     &__wrapper {
-        overflow: scroll;
+        overflow: hidden;
         z-index: -1;
         width: 1216px;
         border-spacing: 0;
