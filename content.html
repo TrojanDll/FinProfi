@@ -58,3 +58,565 @@
 <div class="conclusions__list-wrapper">
     <!-- Заполняется из conclusions-wrapper-fill.js -->
 </div>
+
+
+<section class="report">
+    <div class="container">
+        <div class="report__header">
+            <div class="report__header__wrapper">
+                <div
+                    class="report__header__item report__header__item-date report__header__item-date-mobile"
+                >
+                    <div class="report__header__item-date__wrapper">
+                        <div
+                            class="report__header__item-date__date-forms-wrapper"
+                        >
+                            <form
+                                action=""
+                                class="date-form report__header__item-date__date-form"
+                            >
+                                <input
+                                    type="text"
+                                    name="date"
+                                    id="date-form-report1"
+                                    class="date-form__input report__header__item-date__date-form__input"
+                                    autocomplete="off"
+                                    readonly
+                                />
+                                <img
+                                    src="icons/calendar.svg"
+                                    alt="calendar"
+                                    class="date-form__input-img"
+                                />
+                                <input
+                                    type="reset"
+                                    class="date-form__reset"
+                                    value=""
+                                />
+                            </form>
+
+                            <form
+                                action=""
+                                class="date-form report__header__item-date__date-form"
+                            >
+                                <input
+                                    type="text"
+                                    name="date"
+                                    id="date-form-report2"
+                                    class="date-form__input report__header__item-date__date-form__input"
+                                    autocomplete="off"
+                                    readonly
+                                />
+                                <img
+                                    src="icons/calendar.svg"
+                                    alt="calendar"
+                                    class="date-form__input-img"
+                                />
+                                <input
+                                    type="reset"
+                                    class="date-form__reset"
+                                    value=""
+                                />
+                            </form>
+                        </div>
+                    </div>
+
+                    <div
+                        class="report__header__item__line divider-line report__header__item__line-last"
+                    >
+                        <!-- Заполняется из divider-line-fill.js -->
+                    </div>
+
+                    <div
+                        class="report__header__btns report__header__btns-mobile"
+                    >
+                        <div class="report__header__btn header-btn">
+                            +
+                        </div>
+                        <div class="report__header__btn header-btn">
+                            Загрузить отчет
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="report__header__item report__header__item-name"
+                >
+                    <div class="report__header__item__title">
+                        Наименование показателя
+                    </div>
+                    <div
+                        class="report__header__item__line divider-line"
+                    >
+                        <!-- Заполняется из divider-line-fill.js -->
+                    </div>
+                </div>
+
+                <div
+                    class="report__header__item report__header__item-code"
+                >
+                    <div class="report__header__item__title">
+                        Код строки
+                    </div>
+                    <div
+                        class="report__header__item__line divider-line"
+                    >
+                        <!-- Заполняется из divider-line-fill.js -->
+                    </div>
+                </div>
+
+                <div
+                    class="report__header__item report__header__item-date"
+                >
+                    <div
+                        class="report__header__item-date__date-forms-wrapper"
+                    >
+                        <form
+                            action=""
+                            class="date-form report__header__item-date__date-form"
+                        >
+                            <input
+                                type="text"
+                                name="date"
+                                id="date-form-report3"
+                                class="date-form__input"
+                                autocomplete="off"
+                                readonly
+                            />
+                            <img
+                                src="icons/calendar.svg"
+                                alt="calendar"
+                                class="date-form__input-img"
+                            />
+                            <input
+                                type="reset"
+                                class="date-form__reset"
+                                value=""
+                            />
+                        </form>
+
+                        <form
+                            action=""
+                            class="date-form report__header__item-date__date-form"
+                        >
+                            <input
+                                type="text"
+                                name="date"
+                                id="date-form-report4"
+                                class="date-form__input"
+                                autocomplete="off"
+                                readonly
+                            />
+                            <img
+                                src="icons/calendar.svg"
+                                alt="calendar"
+                                class="date-form__input-img"
+                            />
+                            <input
+                                type="reset"
+                                class="date-form__reset"
+                                value=""
+                            />
+                        </form>
+                    </div>
+
+                    <div
+                        class="report__header__item__line divider-line report__header__item__line-last"
+                    >
+                        <!-- Заполняется из divider-line-fill.js -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="report__header__btns">
+                <div class="report__header__btn header-btn">+</div>
+                <div class="report__header__btn header-btn">
+                    Загрузить отчет
+                </div>
+            </div>
+        </div>
+
+        <form action="./grade.html" class="report__table">
+            <h2 class="report__table__title">Активы</h2>
+            <div class="report__table__subtitle">
+                I. долговые активы
+            </div>
+
+            <div class="report__table__items-wrapper_first">
+                <!-- Заполняется из report-table-items-fill.js -->
+            </div>
+
+            <h2
+                class="report__table__title report__table__title_second"
+            >
+                Дополнительные данные
+            </h2>
+
+            <div class="report__table__items-wrapper_second">
+                <!-- Заполняется из report-table-items-fill.js -->
+            </div>
+
+            <div class="report__btns">
+                <button class="report__btns__btn void-btn">
+                    Краткий отчет
+                </button>
+                <button class="report__btns__btn filled-btn">
+                    Сформировать отчет
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- 
+    .report-mobile {
+    min-height: 1290px;
+    margin-top: 90px;
+
+    &_mobile {
+        display: none;
+    }
+
+    &__header {
+        position: relative;
+        &__wrapper {
+            display: flex;
+            // justify-content: space-between;
+            align-items: end;
+        }
+
+        &__item {
+            &__title {
+                max-width: 180px;
+                color: $dark-gray-ease;
+                font-family: Nunito;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 130%;
+            }
+
+            &__line {
+                margin-top: 17px;
+            }
+
+            &__line-last {
+                margin-top: 12px;
+            }
+        }
+        &__item-name {
+            width: 36%;
+        }
+
+        &__item-code {
+            width: 7%;
+            margin-left: 5%;
+        }
+
+        &__item-date {
+            width: 34%;
+            margin-left: 18%;
+
+            &__date-forms-wrapper {
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+
+        &__item-date-mobile {
+            display: none;
+        }
+
+        &__plug-upload {
+            margin-top: 12px;
+            position: absolute;
+            right: 0;
+        }
+
+        &__btns {
+            width: 212px;
+            position: absolute;
+            bottom: -44px;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__btn {
+            border-color: $cyan-ease;
+            color: $cyan-ease;
+            text-align: center;
+            font-family: Nunito;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            text-transform: none;
+            border-top-width: 1px;
+            border-right-width: 1px;
+            border-bottom-width: 1px;
+            border-left-width: 15px;
+
+            &:first-child {
+                width: 46px;
+                height: 32px;
+            }
+
+            &:last-child {
+                width: 154px;
+                height: 32px;
+                line-height: 16px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    &__table {
+        margin-top: 84px;
+
+        &__title {
+            margin-left: 22px;
+            color: $deep-blue;
+            font-family: Source Sans Pro;
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+
+            &_second {
+                margin-top: 19px;
+            }
+        }
+
+        &__subtitle {
+            margin-top: 13px;
+            margin-left: 22px;
+            color: $cyan-ease;
+            font-family: Nunito;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        &__items-wrapper {
+            margin-top: 13px;
+        }
+
+        &__item {
+            margin-top: 5px;
+        }
+    }
+
+    &__btns {
+        margin-top: 50px;
+        position: absolute;
+        right: 0;
+        display: flex;
+        width: 530px;
+        justify-content: space-between;
+
+        &__btn {
+            width: 245px;
+        }
+    }
+}
+
+@media (max-width: 1230px) {
+    .report-mobile {
+        &__table {
+            margin-top: 40px;
+
+            &__item {
+                &__text-wrapper {
+                    width: 415px;
+                }
+
+                &__inputs-wrapper {
+                    width: 368px;
+                }
+
+                &__input {
+                    width: 175px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 930px) {
+    .report-mobile {
+        &__header {
+            &__wrapper {
+                flex-wrap: wrap;
+            }
+
+            &__item-date {
+                display: none;
+            }
+
+            &__item-date-mobile {
+                margin-left: 0;
+                width: 100%;
+                display: block;
+                height: 50px;
+            }
+
+            &__item-date {
+                &__date-form {
+                    width: calc(50% - 10px);
+                }
+            }
+
+            &__btns {
+                display: none;
+            }
+
+            &__btns-mobile {
+                // position: relative;
+                height: 32px;
+                display: flex;
+                top: 68px;
+            }
+
+            &__item-name {
+                margin-top: 54px;
+            }
+
+            &__item-code {
+                margin-top: 54px;
+                width: 11%;
+            }
+        }
+
+        &__table {
+            &__item {
+                &__text-wrapper {
+                    width: 300px;
+                }
+
+                &__inputs-wrapper {
+                    width: 270px;
+                }
+
+                &__input {
+                    width: 130px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .report-mobile {
+        &__header {
+            &__item {
+                &__title {
+                    font-size: 16px;
+                    line-height: 110%;
+                }
+            }
+            &__item-name {
+                width: 116px;
+            }
+
+            &__item-code {
+                margin-top: 54px;
+                width: 65px;
+            }
+
+            &__btns-mobile {
+                top: 74px;
+            }
+        }
+
+        &__table {
+            margin-top: 24px;
+            &__item {
+                &__text-wrapper {
+                    width: 192px;
+                }
+
+                &__inputs-wrapper {
+                    width: 210px;
+                }
+
+                &__input {
+                    width: 94px;
+
+                    &::-webkit-input-placeholder {
+                        font-size: 0;
+                    }
+                }
+            }
+        }
+
+        &__btns {
+            margin-top: 40px;
+            width: 100%;
+            &__btn {
+                width: 100%;
+                margin: 0;
+                &:first-child {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .report-mobile {
+        &__header {
+            &__item-date {
+                height: auto;
+                &__date-form {
+                    height: 40px;
+                }
+            }
+
+            &__item-name {
+                margin-top: 78px;
+            }
+
+            &__item-code {
+                margin-top: 78px;
+            }
+
+            &__btns-mobile {
+                top: 88px;
+            }
+        }
+
+        &__table {
+            margin-top: 24px;
+
+            &__title {
+                margin-top: 31px;
+                margin-left: 0;
+            }
+
+            &__item {
+                margin-top: 28px;
+                flex-wrap: wrap;
+
+                &__text-wrapper {
+                    width: 100%;
+                }
+
+                &__inputs-wrapper {
+                    width: 100%;
+                    margin-top: 11px;
+                }
+
+                &__input {
+                    width: 149px;
+                }
+            }
+        }
+    }
+}
+
+ -->

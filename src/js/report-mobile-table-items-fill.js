@@ -108,11 +108,11 @@ let subData = [
 ];
 
 const wrapperFirst = document.querySelectorAll(
-    ".report__table__items-wrapper_first"
+    ".report-mobile__table__items-wrapper_first"
 );
 
 const wrapperSecond = document.querySelectorAll(
-    ".report__table__items-wrapper_second"
+    ".report-mobile__table__items-wrapper_second"
 );
 
 //задать число инпутов в каждом элементе, используеться для задания ширины
@@ -121,43 +121,43 @@ const numberOfInputs = 5;
 function insertMainData() {
     return new Promise((resolve, reject) => {
         wrapperFirst.forEach((item) => {
-            let newMainDaraArr = mainData.map((elem) => {
+            let newMainDataArr = mainData.map((elem) => {
                 return `
-                    <div class="report__table__item report-table-item">
+                    <div class="report-mobile__table__item report-table-item">
                 <div
-                    class="report__table__item__text-wrapper report-table-item__text-wrapper"
+                    class="report-mobile__table__item__text-wrapper report-table-item__text-wrapper"
                 >
-                    <div class="report__table__item__header report-table-item__header">
+                    <div class="report-mobile__table__item__header report-table-item__header">
                     ${elem.name}
                     </div>
-                    <div class="report__table__item__code report-table-item__code">${elem.code}</div>
+                    <div class="report-mobile__table__item__code report-table-item__code">${elem.code}</div>
                 </div>
         
                 <div
-                    class="report__table__item__inputs-wrapper report-table-item__inputs-wrapper"
+                    class="report-mobile__table__item__inputs-wrapper report-table-item__inputs-wrapper"
                 >
                     <div class="report-table-item__inputs-wrapper__to-scroll">
                         <input
                             type="text"
-                            class="report__table__item__input report-table-item__input"
+                            class="report-mobile__table__item__input report-table-item__input"
                             placeholder="0"
                         /><input
                             type="text"
-                            class="report__table__item__input report-table-item__input"
+                            class="report-mobile__table__item__input report-table-item__input"
                             placeholder="0"
                         />
                         <input
                     type="text"
-                    class="report__table__item__input report-table-item__input"
+                    class="report-mobile__table__item__input report-table-item__input"
                     placeholder="0"
                 /><input
                     type="text"
-                    class="report__table__item__input report-table-item__input"
+                    class="report-mobile__table__item__input report-table-item__input"
                     placeholder="0"
                 />
                 <input
                             type="text"
-                            class="report__table__item__input report-table-item__input"
+                            class="report-mobile__table__item__input report-table-item__input"
                             placeholder="0"
                         />
                         </div>
@@ -166,7 +166,7 @@ function insertMainData() {
                 `;
             });
 
-            newMainDaraArr.forEach((block) => {
+            newMainDataArr.forEach((block) => {
                 item.innerHTML += block;
             });
         });
@@ -236,43 +236,43 @@ insertMainData().then((resMessage) => {
 });
 
 wrapperSecond.forEach((item) => {
-    let newSubDaraArr = subData.map((elem) => {
+    let newSubDataArr = subData.map((elem) => {
         return `
-            <div class="report__table__item report-table-item">
+            <div class="report-mobile__table__item report-table-item">
                 <div
-                    class="report__table__item__text-wrapper report-table-item__text-wrapper"
+                    class="report-mobile__table__item__text-wrapper report-table-item__text-wrapper"
                 >
-                <div class="report__table__item__header report-table-item__header">
+                <div class="report-mobile__table__item__header report-table-item__header">
                 ${elem.name}
                 </div>
-                <div class="report__table__item__code report-table-item__code">${elem.code}</div>
+                <div class="report-mobile__table__item__code report-table-item__code">${elem.code}</div>
             </div>
 
         <div
-            class="report__table__item__inputs-wrapper report-table-item__inputs-wrapper"
+            class="report-mobile__table__item__inputs-wrapper report-table-item__inputs-wrapper"
         >
             <div class="report-table-item__inputs-wrapper__to-scroll">
                 <input
                     type="text"
-                    class="report__table__item__input report-table-item__input"
+                    class="report-mobile__table__item__input report-table-item__input"
                     placeholder="0"
                 /><input
                     type="text"
-                    class="report__table__item__input report-table-item__input"
+                    class="report-mobile__table__item__input report-table-item__input"
                     placeholder="0"
                 />
                 <input
                     type="text"
-                    class="report__table__item__input report-table-item__input"
+                    class="report-mobile__table__item__input report-table-item__input"
                     placeholder="0"
                 /><input
                     type="text"
-                    class="report__table__item__input report-table-item__input"
+                    class="report-mobile__table__item__input report-table-item__input"
                     placeholder="0"
                 />
                 <input
                             type="text"
-                            class="report__table__item__input report-table-item__input"
+                            class="report-mobile__table__item__input report-table-item__input"
                             placeholder="0"
                         />
                 </div>
@@ -281,7 +281,7 @@ wrapperSecond.forEach((item) => {
         `;
     });
 
-    newSubDaraArr.forEach((block) => {
+    newSubDataArr.forEach((block) => {
         item.innerHTML += block;
     });
 });
