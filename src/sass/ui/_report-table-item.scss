@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
     &__text-wrapper {
         width: 567px;
@@ -27,19 +28,29 @@
         text-align: left;
     }
 
+    &__inputs-wrapper-sub {
+        position: relative;
+        width: 100%;
+        height: 38px;
+    }
+
     &__inputs-wrapper {
         width: 408px;
         display: flex;
         justify-content: space-between;
         overflow: scroll;
-        position: relative;
+        position: absolute;
         min-height: 38px;
+        left: 807px;
 
         &__to-scroll {
             position: absolute;
             height: 100%;
+            width: 100%;
             display: flex;
             justify-content: space-between;
+            left: 0;
+            transition: 0.3s all;
         }
         &::-webkit-scrollbar {
             display: none;
@@ -67,6 +78,40 @@
             font-family: Nunito;
             font-size: 16px;
             font-weight: 400;
+        }
+    }
+}
+
+@media (max-width: 1230px) {
+    .report-table-item {
+        &__inputs-wrapper {
+            left: 540px;
+        }
+    }
+}
+
+@media (max-width: 930px) {
+    .report-table-item {
+        &__inputs-wrapper {
+            left: 380px;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .report-table-item {
+        &__inputs-wrapper {
+            left: 232px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .report-table-item {
+        &__inputs-wrapper {
+            left: 0;
+            bottom: -38px;
+            overflow: scroll;
         }
     }
 }

@@ -1,6 +1,7 @@
 .report {
-    min-height: 1290px;
+    min-height: 1474px;
     margin-top: 90px;
+    overflow: hidden;
 
     &__header {
         position: relative;
@@ -102,6 +103,31 @@
 
     &__table {
         margin-top: 84px;
+        position: relative;
+
+        &__arrows {
+            position: absolute;
+            display: flex;
+            width: 223px;
+            height: 34px;
+            justify-content: space-between;
+            top: 44px;
+            right: 95px;
+        }
+
+        &__arrow {
+            width: 34px;
+            height: 34px;
+            cursor: pointer;
+
+            &_enabled {
+                fill: $cyan-ease;
+            }
+
+            &_disabled {
+                fill: $dark-gray-ease;
+            }
+        }
 
         &__title {
             margin-left: 22px;
@@ -126,8 +152,12 @@
             text-transform: uppercase;
         }
 
-        &__items-wrapper {
-            margin-top: 13px;
+        &__items-wrapper_first {
+            margin-top: 18px;
+        }
+
+        &__items-wrapper_second {
+            margin-top: 18px;
         }
 
         &__item {
@@ -153,6 +183,11 @@
     .report {
         &__table {
             margin-top: 40px;
+
+            &__arrows {
+                width: 190px;
+                right: 86px;
+            }
 
             &__item {
                 &__text-wrapper {
@@ -217,6 +252,10 @@
         }
 
         &__table {
+            &__arrows {
+                right: 42px;
+            }
+
             &__item {
                 &__text-wrapper {
                     width: 300px;
@@ -259,6 +298,16 @@
 
         &__table {
             margin-top: 24px;
+
+            &__arrows {
+                top: 70px;
+                right: 12px;
+            }
+
+            &__items-wrapper_first {
+                margin-top: 40px;
+            }
+
             &__item {
                 &__text-wrapper {
                     width: 192px;
@@ -318,13 +367,17 @@
         &__table {
             margin-top: 24px;
 
+            &__arrows {
+                display: none;
+            }
+
             &__title {
-                margin-top: 31px;
+                margin-top: 73px;
                 margin-left: 0;
             }
 
             &__item {
-                margin-top: 28px;
+                margin-top: 48px;
                 flex-wrap: wrap;
 
                 &__text-wrapper {

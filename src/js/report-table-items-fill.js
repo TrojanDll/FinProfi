@@ -124,45 +124,53 @@ function insertMainData() {
             let newMainDaraArr = mainData.map((elem) => {
                 return `
                     <div class="report__table__item report-table-item">
-                <div
-                    class="report__table__item__text-wrapper report-table-item__text-wrapper"
-                >
-                    <div class="report__table__item__header report-table-item__header">
-                    ${elem.name}
-                    </div>
-                    <div class="report__table__item__code report-table-item__code">${elem.code}</div>
-                </div>
-        
-                <div
-                    class="report__table__item__inputs-wrapper report-table-item__inputs-wrapper"
-                >
-                    <div class="report-table-item__inputs-wrapper__to-scroll">
-                        <input
-                            type="text"
-                            class="report__table__item__input report-table-item__input"
-                            placeholder="0"
-                        /><input
-                            type="text"
-                            class="report__table__item__input report-table-item__input"
-                            placeholder="0"
-                        />
-                        <input
-                    type="text"
-                    class="report__table__item__input report-table-item__input"
-                    placeholder="0"
-                /><input
-                    type="text"
-                    class="report__table__item__input report-table-item__input"
-                    placeholder="0"
-                />
-                <input
-                            type="text"
-                            class="report__table__item__input report-table-item__input"
-                            placeholder="0"
-                        />
+                        <div
+                            class="report__table__item__text-wrapper report-table-item__text-wrapper"
+                        >
+                            <div class="report__table__item__header report-table-item__header">
+                                ${elem.name}
+                            </div>
+                            <div class="report__table__item__code report-table-item__code">
+                                ${elem.code}
+                            </div>
+                        </div>
+                    
+                        <div
+                            class="report__table__item__inputs-wrapper report-table-item__inputs-wrapper"
+                        >
+                            <div class="report-table-item__inputs-wrapper-sub">
+                                <div class="report-table-item__inputs-wrapper__to-scroll">
+                                    <input
+                                        type="text"
+                                        class="report__table__item__input report-table-item__input"
+                                        placeholder="0"
+                                    />
+                                    <input
+                                        type="text"
+                                        class="report__table__item__input report-table-item__input"
+                                        placeholder="0"
+                                    />
+                                    <input
+                                        type="text"
+                                        class="report__table__item__input report-table-item__input"
+                                        placeholder="0"
+                                    />
+                                    <input
+                                        type="text"
+                                        class="report__table__item__input report-table-item__input"
+                                        placeholder="0"
+                                    />
+                                    <input
+                                        type="text"
+                                        class="report__table__item__input report-table-item__input"
+                                        placeholder="0"
+                                    />
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+            
+
                 `;
             });
 
@@ -176,105 +184,117 @@ function insertMainData() {
 }
 
 insertMainData().then((resMessage) => {
-    const wrappersToScroll = document.querySelectorAll(
-        ".report-table-item__inputs-wrapper__to-scroll"
+    const inputsWrapper = document.querySelectorAll(
+        ".report-table-item__inputs-wrapper"
     );
 
-    function setSizeForwrappersToScroll() {
+    function setSizeForInputsWrapper() {
         if (window.innerWidth >= 1230) {
-            wrappersToScroll.forEach((item) => {
+            // console.log(inputsWrapper);
+            inputsWrapper.forEach((item) => {
                 item.style.width = `${
                     numberOfInputs * 185 + 39 * (numberOfInputs - 1)
                 }px`;
             });
-            console.log("1230");
+            // console.log("1230");
             return 0;
         }
 
         if (window.innerWidth >= 930) {
-            wrappersToScroll.forEach((item) => {
+            inputsWrapper.forEach((item) => {
                 item.style.width = `${
                     numberOfInputs * 175 + 10 * (numberOfInputs - 1)
                 }px`;
             });
-            console.log("930");
+            // console.log("930");
             return 0;
         }
 
         if (window.innerWidth >= 680) {
-            wrappersToScroll.forEach((item) => {
+            inputsWrapper.forEach((item) => {
                 item.style.width = `${
                     numberOfInputs * 130 + 10 * (numberOfInputs - 1)
                 }px`;
             });
-            console.log("680");
+            // console.log("680");
             return 0;
         }
 
         if (window.innerWidth >= 480) {
-            wrappersToScroll.forEach((item) => {
+            inputsWrapper.forEach((item) => {
                 item.style.width = `${
                     numberOfInputs * 94 + 20 * (numberOfInputs - 1)
                 }px`;
             });
-            console.log("480");
+            // console.log("480");
             return 0;
         }
 
         if (window.innerWidth >= 1) {
-            wrappersToScroll.forEach((item) => {
-                item.style.width = `${
-                    numberOfInputs * 149 + 22 * (numberOfInputs - 1)
-                }px`;
-            });
-            console.log("1");
+            document
+                .querySelectorAll(
+                    ".report-table-item__inputs-wrapper__to-scroll"
+                )
+                .forEach((item) => {
+                    // console.log(item);
+                    item.style.width = `${
+                        numberOfInputs * 149 + 22 * (numberOfInputs - 1)
+                    }px`;
+                });
+            // console.log("1");
             return 0;
         }
     }
 
-    setSizeForwrappersToScroll();
+    setSizeForInputsWrapper();
 });
 
 wrapperSecond.forEach((item) => {
     let newSubDaraArr = subData.map((elem) => {
         return `
-            <div class="report__table__item report-table-item">
-                <div
-                    class="report__table__item__text-wrapper report-table-item__text-wrapper"
-                >
+        <div class="report__table__item report-table-item">
+            <div
+                class="report__table__item__text-wrapper report-table-item__text-wrapper"
+            >
                 <div class="report__table__item__header report-table-item__header">
-                ${elem.name}
+                    ${elem.name}
                 </div>
-                <div class="report__table__item__code report-table-item__code">${elem.code}</div>
+                <div class="report__table__item__code report-table-item__code">
+                    ${elem.code}
+                </div>
             </div>
-
-        <div
-            class="report__table__item__inputs-wrapper report-table-item__inputs-wrapper"
-        >
-            <div class="report-table-item__inputs-wrapper__to-scroll">
-                <input
-                    type="text"
-                    class="report__table__item__input report-table-item__input"
-                    placeholder="0"
-                /><input
-                    type="text"
-                    class="report__table__item__input report-table-item__input"
-                    placeholder="0"
-                />
-                <input
-                    type="text"
-                    class="report__table__item__input report-table-item__input"
-                    placeholder="0"
-                /><input
-                    type="text"
-                    class="report__table__item__input report-table-item__input"
-                    placeholder="0"
-                />
-                <input
+        
+            <div
+                class="report__table__item__inputs-wrapper report-table-item__inputs-wrapper"
+            >
+                <div class="report-table-item__inputs-wrapper-sub">
+                    <div class="report-table-item__inputs-wrapper__to-scroll">
+                        <input
                             type="text"
                             class="report__table__item__input report-table-item__input"
                             placeholder="0"
                         />
+                        <input
+                            type="text"
+                            class="report__table__item__input report-table-item__input"
+                            placeholder="0"
+                        />
+                        <input
+                            type="text"
+                            class="report__table__item__input report-table-item__input"
+                            placeholder="0"
+                        />
+                        <input
+                            type="text"
+                            class="report__table__item__input report-table-item__input"
+                            placeholder="0"
+                        />
+                        <input
+                            type="text"
+                            class="report__table__item__input report-table-item__input"
+                            placeholder="0"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
