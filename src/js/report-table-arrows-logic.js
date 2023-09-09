@@ -22,8 +22,10 @@ const tableWidth = +window.getComputedStyle(tableSecond).width.slice(0, -2);
 
 let containerWidth;
 
-if (window.innerWidth >= 1230) {
+if (window.innerWidth >= 930) {
     containerWidth = 409;
+} else if (window.innerWidth >= 680) {
+    containerWidth = 230;
 }
 
 let tablePosFirst = 0;
