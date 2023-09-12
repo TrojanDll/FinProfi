@@ -71,6 +71,7 @@
         }
 
         &__file-name {
+            display: none;
             margin-right: 10px;
             color: #959595;
             font-family: Nunito;
@@ -270,6 +271,12 @@
                 margin-top: 54px;
                 width: 11%;
             }
+
+            &__file-name {
+                text-align: right;
+                margin: 0 auto;
+                margin-top: 55px;
+            }
         }
 
         &__table {
@@ -314,6 +321,10 @@
 
             &__btns-mobile {
                 top: 74px;
+            }
+
+            &__file-name {
+                margin-top: 60px;
             }
         }
 
@@ -382,6 +393,10 @@
 
             &__btns-mobile {
                 top: 88px;
+            }
+
+            &__file-name {
+                margin-top: 64px;
             }
         }
 
