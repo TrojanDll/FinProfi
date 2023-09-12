@@ -296,10 +296,19 @@
                             <div
                                 class="report__header__btns report__header__btns-mobile"
                             >
-                                <div class="report__header__btn header-btn">
+                                <input
+                                    type="file"
+                                    class="report__header__btn-input header-btn"
+                                />
+                                <div
+                                    class="report__header__btn report__header__btn_first header-btn"
+                                >
                                     +
                                 </div>
-                                <div class="report__header__btn header-btn">
+                                <div class="report__header__file-name"></div>
+                                <div
+                                    class="report__header__btn report__header__btn_second header-btn"
+                                >
                                     Загрузить отчет
                                 </div>
                             </div>
@@ -395,8 +404,19 @@
                     </div>
 
                     <div class="report__header__btns">
-                        <div class="report__header__btn header-btn">+</div>
-                        <div class="report__header__btn header-btn">
+                        <div class="report__header__file-name"></div>
+                        <div
+                            class="report__header__btn report__header__btn_first header-btn"
+                        >
+                            +
+                        </div>
+                        <input
+                            type="file"
+                            class="report__header__btn-input header-btn"
+                        />
+                        <div
+                            class="report__header__btn report__header__btn_second header-btn"
+                        >
                             Загрузить отчет
                         </div>
                     </div>
@@ -495,7 +515,9 @@
                                     class="footer__contacts__item__img"
                                 />
 
-                                <div class="footer__contacts__item__text">
+                                <div
+                                    class="footer__contacts__item__text footer__contacts__item__text-number"
+                                >
                                     +375 763 59 860
                                 </div>
                             </div>
@@ -507,7 +529,9 @@
                                     class="footer__contacts__item__img"
                                 />
 
-                                <div class="footer__contacts__item__text">
+                                <div
+                                    class="footer__contacts__item__text footer__contacts__item__text-email"
+                                >
                                     finvista@gmail.com
                                 </div>
                             </div>
@@ -545,7 +569,9 @@
                                     class="footer__contacts__item__img"
                                 />
 
-                                <div class="footer__contacts__item__text">
+                                <div
+                                    class="footer__contacts__item__text footer__contacts__item__text-number"
+                                >
                                     +375 763 59 860
                                 </div>
                             </div>
@@ -557,7 +583,9 @@
                                     class="footer__contacts__item__img"
                                 />
 
-                                <div class="footer__contacts__item__text">
+                                <div
+                                    class="footer__contacts__item__text footer__contacts__item__text-email"
+                                >
                                     finvista@gmail.com
                                 </div>
                             </div>
@@ -591,6 +619,7 @@
         <script src="js/footer-contacts-social-fill.js"></script>
         <script src="js/report-table-arrows-logic.js"></script>
         <script src="js/report-table-mobile-scroll.js"></script>
+        <script src="js/add-selected-file.js"></script>
         <script src="js/air-datepicker.js"></script>
         <script src="js/air-datepicker-bind.js"></script>
     </body>

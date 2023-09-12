@@ -61,12 +61,31 @@
         }
 
         &__btns {
-            width: 212px;
+            // width: 212px;
             position: absolute;
             bottom: -44px;
             right: 0;
             display: flex;
             justify-content: space-between;
+            align-items: center;
+        }
+
+        &__file-name {
+            margin-right: 10px;
+            color: #959595;
+            font-family: Nunito;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &__btn-input {
+            opacity: 0;
+            position: absolute;
+            // z-index: -1;
+            width: 46px;
+            height: 32px;
+            cursor: pointer;
         }
 
         &__btn {
@@ -86,13 +105,15 @@
             border-right-width: 1px;
             border-bottom-width: 1px;
             border-left-width: 15px;
+            cursor: pointer;
 
-            &:first-child {
+            &_first {
                 width: 46px;
                 height: 32px;
             }
 
-            &:last-child {
+            &_second {
+                margin-left: 12px;
                 width: 154px;
                 height: 32px;
                 line-height: 16px;

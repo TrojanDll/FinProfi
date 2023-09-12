@@ -25,15 +25,15 @@
 @import "sections/conclusions";
 @import "sections/index-table";
 
-#file-upload-button {
-    display: none;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     -webkit-tap-highlight-color: transparent;
+}
+
+*::-webkit-file-upload-button {
+    display: none;
 }
 
 body {

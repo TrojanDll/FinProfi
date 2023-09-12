@@ -6,7 +6,7 @@ const table = document.querySelectorAll(
 
 let containerWidth = 0;
 const tableWidth = +window.getComputedStyle(table[0]).width.slice(0, -2);
-console.log(tableWidth);
+// console.log(tableWidth);
 
 if (window.innerWidth >= 1230) {
     containerWidth = 408;
