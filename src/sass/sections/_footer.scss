@@ -121,9 +121,13 @@
 
 @media (max-width: 930px) {
     .footer {
-        min-height: 725px;
+        min-height: 685px;
         &__blocks-wrapper {
             display: none;
+        }
+
+        &__logo-wrapper {
+            margin-top: 20px;
         }
 
         &__blocks-wrapper-mobile {
@@ -133,11 +137,13 @@
         &__main-info__logo {
             display: block;
             margin: 0 auto;
-            margin-top: 20px;
         }
 
         &__analysis__title {
             margin-top: 10px;
+            font-size: 20px;
+            font-family: Nunito;
+            font-weight: 400;
         }
 
         &__analysis__btn {
@@ -153,7 +159,7 @@
 
             &__wrapper {
                 min-height: 124px;
-                margin-top: 54px;
+                margin-top: 40px;
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
@@ -173,7 +179,7 @@
             }
 
             &__social {
-                margin-top: 40px;
+                margin-top: 30px;
                 width: 320px;
             }
         }
@@ -183,7 +189,7 @@
                 margin-top: 15px;
             }
             &__text-wrapper-mobile {
-                margin-top: 64px;
+                margin-top: 50px;
                 display: block;
             }
         }
@@ -194,22 +200,60 @@
     }
 }
 
+@media (max-width: 680px) {
+    .footer {
+        min-height: 635px;
+        &__analysis {
+            &__btn {
+                width: 100%;
+            }
+        }
+
+        &__main-info {
+            &__logo {
+                width: 100px;
+                height: 58px;
+            }
+        }
+    }
+}
+
 @media (max-width: 480px) {
     .footer {
-        min-height: 830px;
+        min-height: 690px;
         &__blocks-wrapper-mobile {
-            margin-top: 85px;
             width: 100%;
+        }
+
+        &__logo-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
         }
 
         &__main-info {
             &__text-wrapper {
                 margin-top: 40px;
             }
+
+            &__text-wrapper-mobile {
+                margin-top: 75px;
+            }
         }
 
-        &__analysis__btn {
-            width: 100%;
+        &__analysis {
+            &__btn {
+                margin-top: 40px;
+                width: 100%;
+            }
+
+            &__title {
+                font-size: 16px;
+                line-height: normal;
+                margin: 0;
+                text-align: left;
+                margin-left: 20px;
+            }
         }
 
         &__contacts {
