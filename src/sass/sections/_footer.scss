@@ -34,11 +34,13 @@
         }
 
         &__text {
+            display: block;
             margin-top: 15px;
             color: $white-ease;
             font-family: Nunito;
             font-size: 16px;
             font-weight: 400;
+            text-decoration: none;
         }
 
         &__text-wrapper-mobile {
@@ -115,7 +117,7 @@
         font-size: 16px;
         font-weight: 400;
         position: absolute;
-        bottom: -32px;
+        bottom: -36px;
     }
 }
 
