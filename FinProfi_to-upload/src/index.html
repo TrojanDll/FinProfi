@@ -234,11 +234,11 @@
                             class="report__header__item report__header__item-date report__header__item-date-mobile"
                         >
                             <div class="report__header__item-date__wrapper">
-                                <div
+                                <form
                                     class="report__header__item-date__date-forms-wrapper"
+                                    action=""
                                 >
-                                    <form
-                                        action=""
+                                    <div
                                         class="date-form report__header__item-date__date-form"
                                     >
                                         <input
@@ -259,10 +259,9 @@
                                             class="date-form__reset"
                                             value=""
                                         />
-                                    </form>
+                                    </div>
 
-                                    <form
-                                        action=""
+                                    <div
                                         class="date-form report__header__item-date__date-form"
                                     >
                                         <input
@@ -283,8 +282,8 @@
                                             class="date-form__reset"
                                             value=""
                                         />
-                                    </form>
-                                </div>
+                                    </div>
+                                </form>
                             </div>
 
                             <div
@@ -293,26 +292,26 @@
                                 <!-- Заполняется из divider-line-fill.js -->
                             </div>
 
-                            <div
+                            <form
                                 class="report__header__btns report__header__btns-mobile"
                             >
-                                <input
-                                    type="file"
-                                    class="report__header__btn-input header-btn"
-                                />
-
                                 <div
                                     class="report__header__btn report__header__btn_first header-btn"
                                 >
                                     +
+                                    <input
+                                        type="file"
+                                        class="report__header__btn-input header-btn"
+                                    />
                                 </div>
 
-                                <div
+                                <input
+                                    type="submit"
                                     class="report__header__btn report__header__btn_second header-btn"
-                                >
-                                    Загрузить отчет
-                                </div>
-                            </div>
+                                    value="Загрузить отчет"
+                                    readonly
+                                />
+                            </form>
                             <div class="report__header__file-name"></div>
                         </div>
 
@@ -345,11 +344,11 @@
                         <div
                             class="report__header__item report__header__item-date"
                         >
-                            <div
+                            <form
                                 class="report__header__item-date__date-forms-wrapper"
+                                action=""
                             >
-                                <form
-                                    action=""
+                                <div
                                     class="date-form report__header__item-date__date-form"
                                 >
                                     <input
@@ -370,10 +369,9 @@
                                         class="date-form__reset"
                                         value=""
                                     />
-                                </form>
+                                </div>
 
-                                <form
-                                    action=""
+                                <div
                                     class="date-form report__header__item-date__date-form"
                                 >
                                     <input
@@ -394,8 +392,8 @@
                                         class="date-form__reset"
                                         value=""
                                     />
-                                </form>
-                            </div>
+                                </div>
+                            </form>
 
                             <div
                                 class="report__header__item__line divider-line report__header__item__line-last"
@@ -405,23 +403,25 @@
                         </div>
                     </div>
 
-                    <div class="report__header__btns">
+                    <form class="report__header__btns">
                         <div class="report__header__file-name"></div>
                         <div
                             class="report__header__btn report__header__btn_first header-btn"
                         >
                             +
+                            <input
+                                type="file"
+                                class="report__header__btn-input header-btn"
+                            />
                         </div>
+
                         <input
-                            type="file"
-                            class="report__header__btn-input header-btn"
-                        />
-                        <div
                             class="report__header__btn report__header__btn_second header-btn"
-                        >
-                            Загрузить отчет
-                        </div>
-                    </div>
+                            type="submit"
+                            value="Загрузить отчет"
+                            readonly
+                        />
+                    </form>
                 </div>
 
                 <form action="./grade.html" class="report__table">

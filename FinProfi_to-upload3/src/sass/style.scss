@@ -1,0 +1,71 @@
+// libs
+@import "libs/fonts";
+
+// base
+@import "base/variables";
+
+// ui
+@import "ui/header-btn";
+@import "ui/filled-btn";
+@import "ui/void-btn";
+@import "ui/divider-line";
+@import "ui/report-table-item";
+@import "ui/date-form";
+@import "ui/conclusions-item";
+
+// sections from index.html
+@import "sections/header";
+@import "sections/solutions";
+@import "sections/report-mini";
+@import "sections/report";
+@import "sections/footer";
+
+// sections from grade.html
+@import "sections/grade";
+@import "sections/conclusions";
+@import "sections/index-table";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: url("../img/body__bg.png") center center/cover repeat;
+}
+
+input {
+  outline: none;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 1216px;
+}
+
+@media (max-width: 1230px) {
+  .container {
+    width: 900px;
+  }
+}
+
+@media (max-width: 930px) {
+  .container {
+    width: 650px;
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    width: 440px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 320px;
+  }
+}

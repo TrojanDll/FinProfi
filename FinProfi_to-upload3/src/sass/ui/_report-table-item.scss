@@ -1,0 +1,117 @@
+.report-table-item {
+    width: 100%;
+    min-height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &__text-wrapper {
+        width: 567px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__header {
+        color: $deep-blue;
+        font-family: Nunito;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__code {
+        color: $deep-blue;
+        font-family: Nunito;
+        font-size: 16px;
+        font-weight: 400;
+        min-width: 34px;
+        text-align: left;
+    }
+
+    &__inputs-wrapper-sub {
+        position: relative;
+        width: 100%;
+        height: 38px;
+    }
+
+    &__inputs-wrapper {
+        width: 408px;
+        display: flex;
+        justify-content: space-between;
+        overflow: scroll;
+        position: absolute;
+        min-height: 38px;
+        left: 807px;
+
+        &__to-scroll {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            left: 0;
+            transition: 0.3s all;
+        }
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__input {
+        height: 38px;
+        width: 184px;
+        display: flex;
+        padding: 10px 0px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        border: 1px solid $dark-gray-ease;
+        text-align: center;
+
+        color: $deep-blue;
+        font-family: Nunito;
+        font-size: 16px;
+        font-weight: 400;
+
+        &::-webkit-input-placeholder {
+            color: $gray-ease;
+            font-family: Nunito;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
+
+@media (max-width: 1230px) {
+    .report-table-item {
+        &__inputs-wrapper {
+            left: 540px;
+        }
+    }
+}
+
+@media (max-width: 930px) {
+    .report-table-item {
+        &__inputs-wrapper {
+            left: 380px;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .report-table-item {
+        &__inputs-wrapper {
+            left: 232px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .report-table-item {
+        &__inputs-wrapper {
+            left: 0;
+            bottom: -38px;
+            overflow: scroll;
+        }
+    }
+}

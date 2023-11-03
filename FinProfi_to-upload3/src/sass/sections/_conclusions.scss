@@ -1,0 +1,95 @@
+.conclusions {
+    margin-top: 40px;
+    min-height: 100px;
+
+    &__header {
+        color: $cyan-ease;
+        font-family: Raleway;
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    &__result {
+        margin-top: 40px;
+
+        &__title {
+            color: $cyan-ease;
+            font-family: Raleway;
+            font-size: 36px;
+            font-weight: 500;
+        }
+
+        &__subtitle {
+            margin-top: 20px;
+            color: #e26b24;
+            font-family: Source Sans Pro;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        &__descr {
+            margin-top: 20px;
+            color: $deep-blue;
+            font-family: Nunito;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 130%; /* 26px */
+
+            &__list {
+                list-style-type: none;
+
+                &__item {
+                    position: relative;
+                    margin-left: 30px;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: -20px;
+                        transform: translateY(-50%);
+                        display: block;
+                        width: 7px;
+                        height: 7px;
+                        border-radius: 100%;
+                        background-color: $deep-blue;
+                    }
+                }
+            }
+        }
+    }
+
+    &__list-wrapper {
+        margin-top: 40px;
+    }
+}
+
+.conclusions-item {
+    margin-top: 40px;
+
+    &:first-child {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 680px) {
+    .conclusions {
+        &__result {
+            &__title {
+                font-size: 28px;
+            }
+
+            &__descr {
+                &__list {
+                    &__item {
+                        &::before {
+                            top: 10px;
+                            left: -20px;
+                            transform: translateY(0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
