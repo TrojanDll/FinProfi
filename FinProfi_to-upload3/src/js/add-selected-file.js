@@ -1,5 +1,6 @@
 const fileInputs = document.querySelectorAll(".report__header__btn-input");
 const fileInfo = document.querySelectorAll(".report__header__file-name");
+const forms = document.querySelectorAll(".report__header__btns");
 const reportHeaderCodeItems = document.querySelectorAll(
   ".report__header__item-code"
 );
@@ -7,7 +8,7 @@ const reportHeaderNameItems = document.querySelectorAll(
   ".report__header__item-name"
 );
 
-fileInputs.forEach((inputs) => {
+fileInputs.forEach((inputs, i) => {
   inputs.addEventListener("change", (e) => {
     const selectedFile = e.target.files[0];
     fileInfo.forEach((fileInfo) => {
@@ -31,5 +32,7 @@ fileInputs.forEach((inputs) => {
     reportHeaderNameItems.forEach((reportHeaderNameItem) => {
       reportHeaderNameItem.style.marginTop = marginTopForItem;
     });
+
+    forms[i].submit();
   });
 });

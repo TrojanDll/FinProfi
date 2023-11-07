@@ -18,6 +18,7 @@
     // transition-property: left;
     // transition-duration: 0.3s;
     transition: 0.3s all;
+    width: auto;
   }
 
   &__item-header {
@@ -115,7 +116,7 @@
   }
 
   &__arrows {
-    display: none;
+    // display: none;
   }
 
   &__arrow {

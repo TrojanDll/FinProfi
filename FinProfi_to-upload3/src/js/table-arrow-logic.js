@@ -68,7 +68,8 @@
 //   tablePosChange(-(tableWidth / 6));
 // });
 
-var tables = document.getElementsByClassName("index-table__wrapper");
+// var tables = document.getElementsByClassName("index-table__wrapper");
+let tables = document.querySelectorAll(".index-table__wrapper");
 
 const tableSections = document.querySelectorAll(".index-table");
 tableSections.forEach((tableSection) => {
@@ -80,18 +81,29 @@ tableSections.forEach((tableSection) => {
   // tableSection.querySelector(".index-table__arrows").style.top = headerHeight;
 });
 
-tables.forEach(function (table) {
+tables.forEach(function (table, i) {
   var id = table.dataset["id"];
   const arrowRight = document.querySelector("#arrow-right_" + id);
   const arrowLeft = document.querySelector("#arrow-left_" + id);
   const container = document.querySelector("#container_" + id);
+
   //const table = document.querySelector(".index-table__wrapper");
+  console.log(arrowRight);
 
   const containerWidth = +window.getComputedStyle(container).width.slice(0, -2);
   const tableWidth = +window.getComputedStyle(table).width.slice(0, -2);
+
+  if (containerWidth == tableWidth) {
+    arrowRight.style.display = "none";
+    arrowLeft.style.display = "none";
+  } else if (containerWidth != tableWidth) {
+    arrowRight.style.display = "block";
+    arrowLeft.style.display = "block";
+  }
+
   // console.log(table);
-  // console.log(tableWidth);
-  // console.log(containerWidth);
+  // console.log(`tableWidth ${tableWidth}`);
+  // console.log(`containerWidth ${containerWidth}`);
 
   let tablePos = 0;
   let maxTablePos = tableWidth - containerWidth;
